@@ -1,0 +1,16 @@
+Descrição do Problema
+Uma padaria automatizou seu sistema de vendas, mas optou por reutilizar um software terceirizado antigo para realizar o cálculo bruto das contas (SistemaAntigoCobranca). 
+Este sistema legado possui duas grandes limitações incompatíveis com as necessidades atuais do negócio:
+
+Ele exige que todas as quantidades dos produtos sejam enviadas estritamente no formato de texto (String).
+Ele é inflexível ("mão de vaca") e calcula apenas o preço cheio dos produtos, impossibilitando a aplicação direta de regras de desconto ou promoções.
+Por outro lado, o caixa moderno da padaria exige uma interface (InterfacePadaria) que trabalhe nativamente com números inteiros (int) e necessita aplicar uma regra de fidelidade:
+    ->caso o cliente compre mais de 10 unidades de qualquer item, ele ganha automaticamente 10% de desconto sobre o valor total daquele item específico.
+
+Além disso, o sistema atual precisa gerenciar uma saudação personalizada e o fluxo de pagamento completo (leitura do valor pago em dinheiro e cálculo de troco).
+Os produtos comercializados e seus respectivos valores unitários são:
+-> Pão: R$ 0,50
+-> Café: R$ 1,50
+-> Pão de Queijo: R$ 1,00
+-> Rosca: R$ 2,50
+-> Salgado: R$ 5,00
